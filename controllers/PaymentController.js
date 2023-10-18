@@ -20,8 +20,8 @@ let paymentController=async(req,res)=>{
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: `https://build-odhew5egw-akashsaha747.vercel.app/paymentsuccess`,
-      cancel_url: `https://build-odhew5egw-akashsaha747.vercel.app/paymentfail`,
+      success_url: `http://localhost:3000/paymentsuccess`,
+      cancel_url: `http://localhost:3000/paymentfail`,
     });
   
     res.json({ id: session.id });
