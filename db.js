@@ -1,7 +1,7 @@
 // backend/db.js
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect('mongodb+srv://riteshshukla:riteshshukla@cluster0.fo6fefn.mongodb.net/digiblocks', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

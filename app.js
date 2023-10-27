@@ -1,4 +1,3 @@
-require("dotenv").config();
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 const express = require('express');
@@ -6,7 +5,7 @@ const app = express();
 const cors = require('cors');
 const certificationRoutes = require('./routes/certificationRoutes');
 const contactRoutes = require('./routes/contactRoutes');
-const paymentRoutes = require('./routes/PaymentRoute');
+
 const documentRoutes = require('./routes/documentRoutes');
 const certificateRoutes = require('./routes/certificateRoutes');
 const registrationRoutes = require('./routes/registrationRoutes');
@@ -19,8 +18,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/certifications', certificationRoutes);
-app.use('/contacts', contactRoutes); 
-app.use('/api', paymentRoutes); 
+app.use('/contacts', contactRoutes);
 app.use('/', certificateRoutes);
 app.use('/', documentRoutes);
 app.use('/api/documents/uploads', express.static('uploads'));

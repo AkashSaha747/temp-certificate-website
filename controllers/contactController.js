@@ -32,13 +32,13 @@ const sendThankYouEmail = async (toEmail) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail', // E.g., Gmail, Yahoo, etc.
       auth: {
-        user: 'ritesh.dltouch.technologies@gmail.com', // Your email address
-        pass: 'tbfiacxcnaapslnt', // Your email password
+        user: 'ritesh.digiblocks@gmail.com', // Your email address
+        pass: 'bejhhyhsojeecvra', // Your email password --> bejhhyhsojeecvra
       },
     });
 
     const mailOptions = {
-      from: 'ritesh.dltouch.technologies@gmail.com', // Your email address
+      from: 'ritesh.digiblocks@gmail.com', // Your email address
       to: toEmail, // User's email address
       subject: 'Thank you for contacting us',
       html: `
@@ -105,13 +105,13 @@ const sendUserMessage = async (toEmail, message) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'ritesh.dltouch.technologies@gmail.com', // Your email address
-        pass: 'tbfiacxcnaapslnt', // Your email password
+        user: 'ritesh.digiblocks@gmail.com', // Your email address
+        pass: 'bejhhyhsojeecvra', // Your email password --> bejhhyhsojeecvra
       },
     });
 
     const mailOptions = {
-      from: 'ritesh.dltouch.technologies@gmail.com', // Your email address
+      from: 'ritesh.digiblocks@gmail.com', // Your email address
       to: toEmail,
       subject: 'Reply from Digiblocks',
       html: `
@@ -172,7 +172,7 @@ const sendUserMessage = async (toEmail, message) => {
                 <p>Thank you for contacting Digiblocks!</p>
               </div>
               <div class="footer">
-                <p>For any further inquiries, please contact us at +91-9945015551 or email us at contact@digiblocks.tech</p>
+                <p>For any further inquiries, please contact us at +91-9945015551 or email us at admin@digiblocks.tech</p>
               </div>
             </div>
           </body>
